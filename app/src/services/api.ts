@@ -5,9 +5,9 @@ const axiosInstance = axios.create({
   //   timeout: 1000,
 });
 
-export const getMovies = () => {
-  return axiosInstance.get("/movies");
-};
+// export const getMovies = () => {
+//   return axiosInstance.get("/movies");
+// };
 
 interface IMovieAdd {
   title: string;
