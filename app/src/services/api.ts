@@ -14,9 +14,9 @@ interface IMovieAdd {
   year: number;
 }
 
-// export const addMovie = (payload: IMovieAdd) => {
-//   return axiosInstance.post("/movies", payload);
-// };
+export const addMovie = (payload: IMovieAdd) => {
+  return axiosInstance.post("/movies", payload);
+};
 
 export const updateMovie = (payload: IMovieAdd, movieId: number) => {
   return axiosInstance.put(`/movies/${movieId}`, payload);
