@@ -22,6 +22,6 @@ export const updateMovie = (payload: IMovieAdd, movieId: number) => {
   return axiosInstance.put(`/movies/${movieId}`, payload);
 };
 
-// export const deleteMovie = (movieId: number) => {
-//   return axiosInstance.delete(`/movies/${movieId}`);
-// };
+export const deleteMovie = (movieId: number) => {
+  return axiosInstance.delete(`/movies/${movieId}`);
+};
